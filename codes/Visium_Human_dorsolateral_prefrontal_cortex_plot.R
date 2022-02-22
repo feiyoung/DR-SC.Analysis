@@ -1,10 +1,10 @@
 
 
 rm(list=ls())
-#load('brain12.Rdata')
+
 load("Visium_Human_dorsolateral_prefrontal_cortex.Rdata")
 
-save(df1, dlpfc, seu2, clusters, AriMat, file="Visium_Human_dorsolateral_prefrontal_cortex.Rdata")
+
 library(ggplot2)
 thmem_used <- theme(axis.text.x=element_text(size=16, color=1, face='bold'),
                     axis.text.y=element_text(size=16, color=1, face='bold'),
@@ -50,11 +50,6 @@ p2
 
 
 ##### 2. Heatmap
-# # save(dlpfc, clusters, AriMat, file='brain151510.Rdata')
-# rm(list=ls())
-# load("brain151510.Rdata")
-# dlpfc_copy <- dlpfc
-# dlpfc <- dlpfc[1:3,]
 
 library(BayesSpace)
 library(ggplot2)
