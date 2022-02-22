@@ -1,2 +1,2 @@
 # DR.SC-Analysis
- Codes and analysis results of DR-SC
+ Codes for analysis of DR-SC
