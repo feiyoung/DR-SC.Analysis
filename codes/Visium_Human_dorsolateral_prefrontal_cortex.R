@@ -118,7 +118,7 @@ for(iter in 1:n_ID){
   ## Note: In this simu example, we generate square neighbor system, so plantform="ST"
   # calculate the Adjoint matrix
   library(purrr)
-  ij <- find_neighbors(sce, platform="Visium")
+  ij <- find_neighbors(pos, platform="Visium")
   library(Matrix)
   Adj_sp <- sparseMatrix(ij[,1], ij[,2], x = 1)
   
@@ -435,7 +435,7 @@ for(iter in 1:n_ID){
   ## Note: In this simu example, we generate square neighbor system, so plantform="ST"
   # calculate the Adjoint matrix
   library(purrr)
-  ij <- find_neighbors(sce, platform="Visium")
+  ij <- find_neighbors(pos, platform="Visium")
   library(Matrix)
   Adj_sp <- sparseMatrix(ij[,1], ij[,2], x = 1)
   
